@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <title> Show More/Less </title>
+
+ <style>
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+ .j { width: 30em; text-align: justify; }
+ .hide { display: none; }
+ .pink { background-color: tan;  color: white; }
+ b, span { cursor: pointer; }
+</style>
+
+</head>
+<body>
+<div class="mySlides">
+      <div class="ui-layout" style="padding: 25px; margin:0 50px; border: 1px solid rgb(128, 128, 128); border-radius:25px; box-shadow: 0px 4px 8px 0px #BDBDBD; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h3 style="text-align: center;"> seoiusefesfyeuuse </h3>
+        <p style="color: #848282; font-family: sans-serif; text-align: justify;"> rjruturitueruiu </p><br>                
+        <button class="readMore" style="color: blue; font-family: sans-serif; text-align: center; cursor: pointer;" onclick="evtEllipse(this)">Read More</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="spanEllipse(this)">×</span>
+            <h3 style="text-align: center;"> sfefsefse </h3>
+            <p style="color: #848282; font-family: sans-serif; text-align: justify;"> efsefsefsefesfsef </p><br>
+          </div>
+        </div>
+      </div>
+      <div class="ui-layout" style="padding: 25px; margin:0 50px; border: 1px solid rgb(128, 128, 128); border-radius:25px; box-shadow: 0px 4px 8px 0px #BDBDBD; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h3 style="text-align: center;"> seoiusefesfyeuuse </h3>
+        <p style="color: #848282; font-family: sans-serif; text-align: justify;"> rjruturitueruiu </p><br>                
+        <button class="readMore" style="color: blue; font-family: sans-serif; text-align: center; cursor: pointer;" onclick="evtEllipse(this)">Read More</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <button class="close" onclick="spanEllipse(this)">×</button>
+            <h3 style="text-align: center;"> fgfgfd </h3>
+            <p style="color: #848282; font-family: sans-serif; text-align: justify;"> efsefsefsefesfsef </p><br>
+          </div>
+        </div>
+      </div>
+      <div class="ui-layout" style="padding: 25px; margin:0 50px; border: 1px solid rgb(128, 128, 128); border-radius:25px; box-shadow: 0px 4px 8px 0px #BDBDBD; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h3 style="text-align: center;"> seoiusefesfyeuuse </h3>
+        <p style="color: #848282; font-family: sans-serif; text-align: justify;"> rjruturitueruiu </p><br>                
+        <button class="readMore" style="color: blue; font-family: sans-serif; text-align: center; cursor: pointer;" onclick="evtEllipse(this)">Read More</button>
+        <div id="myModal" class="modal">
+        <button class="close" onclick="spanEllipse(this)">×</button>
+          <div class="modal-content">
+            <button class="close" onclick="spanEllipse(this)">×</button>
+            <h3 style="text-align: center;"> dgdgdxgdgd </h3>
+            <p style="color: #848282; font-family: sans-serif; text-align: justify;"> efsefsefsefesfsef </p><br>
+          </div>
+        </div>
+      </div>
+ </div>
+<script>
+// For: http://www.webdeveloper.com/forum/showthread.php?364215-Show-only-first-line-of-a-paragraph&p=1508263#post1508263
+function evtEllipse(info) {
+  info.nextElementSibling.classList.toggle('modal');
+  info.classList.toggle('modal');
+}
+function spanEllipse(info) {
+  info.parentElement.classList.toggle('modal');
+  info.classList.toggle('modal');
+}
+
+/*// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("readMore");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onClick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onClick = function() {
+  modal.style.display = "none";
+}*/
+
+</script>
+</body>
+</html>
+`
